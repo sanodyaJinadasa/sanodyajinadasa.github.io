@@ -1,7 +1,5 @@
-// Init WOW.js animations
 new WOW().init();
 
-// Mobile nav toggle
 const toggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
 if (toggle && links) {
@@ -21,7 +19,6 @@ if (toggle && links) {
   });
 }
 
-// Smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach((a) => {
   a.addEventListener("click", (e) => {
     const id = a.getAttribute("href").slice(1);
@@ -36,7 +33,6 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
-// Contact form demo handler
 function handleSubmit(e) {
   e.preventDefault();
   const name = document.getElementById("name").value.trim();
@@ -51,5 +47,4 @@ function handleSubmit(e) {
   return false;
 }
 
-// Current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
