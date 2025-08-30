@@ -1,394 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>P.M. Sanodya V. Jinadasa | Portfolio</title>
-  <meta name="description" content="Creative portfolio of P.M. Sanodya Vimukthi Jinadasa — Full‑Stack Developer & Data Science Undergraduate."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="styles.css"/>
-  <script src="https://kit.fontawesome.com/a2f3d6f1b0.js" crossorigin="anonymous"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-</head>
-<body>
-
-  <div class="bg-blobs" aria-hidden="true">
-    <span class="blob blob-1"></span>
-    <span class="blob blob-2"></span>
-    <span class="blob blob-3"></span>
-  </div>
-
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="#home">
-        <span class="logo-mark">SJ</span>
-        <span class="logo-text">Sanodya Jinadasa</span>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#extras">Extras</a></li>
-          <li><a href="#contact" class="btn btn-primary">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P.M. Sanodya V. Jinadasa | Portfolio</title>
+    <meta
+      name="description"
+      content="Creative portfolio of P.M. Sanodya Vimukthi Jinadasa — Full‑Stack Developer & Data Science Undergraduate."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a2f3d6f1b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
     </div>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text wow animate__animated animate__fadeInUp">
-        <h1>Hi, I'm <span class="grad">P.M. Sanodya V. Jinadasa</span></h1>
-        <p class="subtitle">Full‑Stack Web Developer <span class="muted">|</span> Data Science Undergraduate</p>
-        <p class="tagline">I build useful, human‑centered web apps and blend them with practical Machine Learning.</p>
-        <div class="cta">
-          <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Work</a>
-          <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Hire Me</a>
-        </div>
-        <div class="social">
-          <a href="mailto:sanodyaj@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
-          <a href="tel:+94765536428" title="Phone"><i class="fa fa-phone"></i></a>
-          <a href="http://www.linkedin.com/in/sanodya-v-jinadasa-715913269" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/sanodyaJinadasa" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a>
-        </div>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#home">
+          <span class="logo-mark">SJ</span>
+          <span class="logo-text">Sanodya Jinadasa</span>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#extras">Extras</a></li>
+            <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" aria-label="Open Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
       </div>
-      <div class="hero-card wow animate__animated animate__zoomIn">
-        <div class="card">
-          <div class="card-inner">
-            <h3>Quick Facts</h3>
-            <ul class="facts">
-              <li><i class="fas fa-location-dot"></i> Sri Lanka</li>
-              <li><i class="fas fa-graduation-cap"></i> B.Sc. (Hons) in Data Science — Year 2</li>
-              <li><i class="fas fa-certificate"></i> B.Sc. (Hons) in Software Engineering</li>
-              <li><i class="fas fa-language"></i> English, Sinhala</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="scroll-indicator" href="#about" aria-label="Scroll down"><i class="fas fa-angle-down"></i></a>
-  </section>
+    </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-head wow animate__animated animate__fadeInUp">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Calm, dedicated, and detail‑driven. I love turning ideas into polished products.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-card wow animate__animated animate__fadeInLeft">
-          <p>
-            I am a passionate and enthusiastic graduate in Software Engineering, now pursuing my second degree in Data Science.
-            I'm seeking an opportunity as a trainee to sharpen my professional skills and contribute to real‑world projects.
-            I work hard to achieve goals on time and enjoy presenting work clearly to different audiences.
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text wow animate__animated animate__fadeInUp">
+          <h1>Hi, I'm <span class="grad">P.M. Sanodya V. Jinadasa</span></h1>
+          <p class="subtitle">
+            Full‑Stack Web Developer <span class="muted">|</span> Data Science
+            Undergraduate
           </p>
-          <ul class="about-list">
-            <li><strong>Age:</strong> 22</li>
-            <li><strong>DOB:</strong> 07 Feb 2003</li>
-            <li><strong>Phone:</strong> +94 76 553 6428</li>
-            <li><strong>Email:</strong> sanodyaj@gmail.com</li>
-            <li><strong>Address:</strong> Wewalwala, Ku/Bopitiya</li>
+          <ul class="facts">
+            <li>
+              <i class="fas fa-graduation-cap"></i> B.Sc. (Hons) in Data Science
+              — Year 2
+            </li>
+            <li>
+              <i class="fas fa-certificate"></i> B.Sc. (Hons) in Software
+              Engineering
+            </li>
           </ul>
-        </div>
-        <div class="about-stats wow animate__animated animate__fadeInRight">
-          <div class="stat"><span>10+</span> Major Projects</div>
-          <div class="stat"><span>2+</span> Year Industry</div>
-          <div class="stat"><span>∞</span> Curiosity</div>
-          <div class="badges">
-            <span class="badge">Laravel</span>
-            <span class="badge">Flask</span>
-            <span class="badge">ML</span>
-            <span class="badge">React Native</span>
-            <span class="badge">MySQL</span>
+          <p class="tagline">
+            I build useful, human‑centered web apps and blend them with
+            practical Machine Learning.
+          </p>
+          <div class="cta">
+            <a href="#projects" class="btn btn-primary"
+              ><i class="fas fa-rocket"></i> View Work</a
+            >
+            <a href="#contact" class="btn btn-ghost"
+              ><i class="fas fa-paper-plane"></i> Hire Me</a
+            >
+            <a href="sanodya _jinadasa_CV.pdf" download="sanodya _jinadasa_CV.pdf" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> Download CV
+            </a>
+          </div>
+          <div class="social">
+            <a href="mailto:sanodyaj@gmail.com" title="Email"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a href="tel:+94765536428" title="Phone"
+              ><i class="fa fa-phone"></i
+            ></a>
+            <a
+              href="http://www.linkedin.com/in/sanodya-v-jinadasa-715913269"
+              target="_blank"
+              rel="noopener"
+              title="LinkedIn"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/sanodyaJinadasa"
+              target="_blank"
+              rel="noopener"
+              title="GitHub"
+              ><i class="fa fa-github"></i
+            ></a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="section alt">
-    <div class="container">
-      <div class="section-head wow animate__animated animate__fadeInUp">
-        <h2 class="section-title">Skills</h2>
-        <p class="section-subtitle">Tools I use to craft robust solutions.</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
-          <h3>Languages & Core</h3>
-          <ul class="tags">
-            <li>Java</li><li>Python</li><li>PHP</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li>
-          </ul>
-        </div>
-        <div class="skill-card wow animate__animated animate__fadeInUp" data-wow-delay="0.10s">
-          <h3>Frameworks & Tools</h3>
-          <ul class="tags">
-            <li>Laravel</li><li>Flask</li><li>React Native</li><li>Git</li><li>NetBeans</li><li>VS Code</li>
-          </ul>
-        </div>
-        <div class="skill-card wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
-          <h3>Concepts</h3>
-          <ul class="tags">
-            <li>OOP</li><li>SDLC</li><li>APIs</li><li>Data Visualization</li>
-          </ul>
-        </div>
-        <div class="skill-card wow animate__animated animate__fadeInUp" data-wow-delay="0.20s">
-          <h3>Soft Skills</h3>
-          <ul class="tags">
-            <li>Teamwork</li><li>Communication</li><li>Creativity</li><li>Multitasking</li><li>Friendly</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="section">
-    <div class="container">
-      <div class="section-head wow animate__animated animate__fadeInUp">
-        <h2 class="section-title">Education</h2>
-        <p class="section-subtitle">A path that blends software engineering with data science.</p>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item wow animate__animated animate__fadeInUp">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>B.Sc. (Hons) Data Science</h3>
-            <p>Sabaragamuwa University of Sri Lanka — <strong>2024–Present</strong> (2nd Year Undergraduate)</p>
-          </div>
-        </div>
-        <div class="timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>B.Sc. (Hons) Software Engineering</h3>
-            <p>IIC University of Technology — Java Institute — <strong>2020–2024</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Diploma in Information Technology</h3>
-            <p>Esoft Metro Campus — <strong>2021–2022</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Certificate Course in CCNAv7</h3>
-            <p>Cisco Networking Academy — <strong>2020–2021</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>G.C.E A/L — Physical Science</h3>
-            <p>A for IT, C for Maths, S for Physics — <strong>2022</strong></p>
-          </div>
-        </div>
-        <div class="timeline-item wow animate__animated animate__fadeInUp" data-wow-delay="0.25s">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>G.C.E O/L</h3>
-            <p>6 A's (Maths, IT, Sinhala, Buddhism, History), 3 B's (Science, Commerce, English) — <strong>2019</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section alt">
-    <div class="container">
-      <div class="section-head wow animate__animated animate__fadeInUp">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">Selected works I’m proud of.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card wow animate__animated animate__fadeInUp">
-          <div class="card-inner">
-            <div class="card-top">
-              <span class="pill">Web</span>
-              <span class="pill pill-outline">Individual</span>
+        <div class="hero-card wow animate__animated animate__zoomIn">
+          <div class="card">
+            <div class="card-inner">
+              <img src="profile.jpg" alt="Profile Image" />
             </div>
-            <h3>E‑Commerce Web Application</h3>
-            <p>A web‑based online shopping platform for mobile items. Built as a first‑year project with attention to UX and modular code.</p>
-          </div>
-        </article>
-
-        <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
-          <div class="card-inner">
-            <div class="card-top">
-              <span class="pill">Full‑Stack</span>
-              <span class="pill pill-outline">AI/ML</span>
-            </div>
-            <h3>FocusZen — Study Focus Website</h3>
-            <p>Laravel + Python (Flask) + ML. Features sentiment analysis on YouTube comments, sleep prediction, dashboarding, and a focus community.</p>
-          </div>
-        </article>
-
-        <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-          <div class="card-inner">
-            <div class="card-top">
-              <span class="pill">Desktop</span>
-              <span class="pill pill-outline">Individual</span>
-            </div>
-            <h3>Student Management System</h3>
-            <p>A desktop application for schools/academies with CRUD modules, reports, and a clean navigation experience.</p>
-          </div>
-        </article>
-
-        <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
-          <div class="card-inner">
-            <div class="card-top">
-              <span class="pill">Mobile</span>
-              <span class="pill pill-outline">React Native</span>
-            </div>
-            <h3>Note App</h3>
-            <p>A simple but polished note‑taking app with local storage, theming, and quick search for productivity on the go.</p>
-          </div>
-        </article>
-
-        <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-          <div class="card-inner">
-            <div class="card-top">
-              <span class="pill">Android</span>
-              <span class="pill pill-outline">Commerce</span>
-            </div>
-            <h3>PlantMe App</h3>
-            <p>An Android m‑commerce app that streamlines browsing and purchasing for plant lovers.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-head wow animate__animated animate__fadeInUp">
-        <h2 class="section-title">Experience</h2>
-        <p class="section-subtitle">Learning by shipping in real environments.</p>
-      </div>
-      <div class="cards">
-        <article class="card wow animate__animated animate__fadeInUp">
-          <div class="card-inner">
-            <h3>Full‑Stack Web Developer — Jayawardena Enterprises (Pvt) Ltd </h3>
-            <p><strong>Duration:</strong> 1+ year</p>
-            <p><strong>Stack:</strong> Laravel, PHP, JS, CSS</p>
-            <p>Contributed to features, fixed bugs, and collaborated with cross‑functional teams to deliver value.</p>
-          </div>
-        </article>
-        <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
-          <div class="card-inner">
-            <h3>Intern Full‑Stack Web Developer — Froze‑it (Pvt) Ltd</h3>
-            <p><strong>Duration:</strong> 1 year</p>
-            <p>Built and maintained full‑stack features across frontend and backend, improving performance and usability.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="extras" class="section alt">
-    <div class="container">
-      <div class="section-head wow animate__animated animate__fadeInUp">
-        <h2 class="section-title">Leadership & Extras</h2>
-        <p class="section-subtitle">Beyond code — growing through teamwork and service.</p>
-      </div>
-      <div class="cards three">
-        <article class="card wow animate__animated animate__fadeInUp">
-          <div class="card-inner">
-            <h3>School Prefect</h3>
-            <p>(2017–2019)</p>
-          </div>
-        </article>
-        <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
-          <div class="card-inner">
-            <h3>Netball Team</h3>
-            <p>Team player with discipline and grit.</p>
-          </div>
-        </article>
-        <article class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-          <div class="card-inner">
-            <h3>Scout Team — Vice‑Captain</h3>
-            <p>Leadership through action and responsibility.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="split two wow animate__animated animate__fadeInUp" style="margin-top:1rem">
-        <div class="card">
-          <div class="card-inner">
-            <h3>Languages</h3>
-            <p>English, Sinhala</p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-inner">
-            <h3>References</h3>
-            <ul class="ref-list">
-              <li><strong>R.A.M.K. Rajapaksha</strong> — Software Engineer / Teacher / SEO Specialist — 071 231 3177 — rajapakshakosala@gmail.com</li>
-              <li><strong>Thilina Rajakaruna</strong> — Lecturer, Java Institute — 071 051 2311 — thilina.jiat@gamil.com</li>
+      </div>
+      <a class="scroll-indicator" href="#about" aria-label="Scroll down"
+        ><i class="fas fa-angle-down"></i
+      ></a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head wow animate__animated animate__fadeInUp">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Calm, dedicated, and detail‑driven. I love turning ideas into
+            polished products.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card wow animate__animated animate__fadeInLeft">
+            <p>
+              I am a passionate and enthusiastic graduate in Software
+              Engineering, now pursuing my second degree in Data Science. I'm
+              seeking an opportunity as a trainee to sharpen my professional
+              skills and contribute to real‑world projects. I work hard to
+              achieve goals on time and enjoy presenting work clearly to
+              different audiences.
+            </p>
+            <ul class="about-list">
+              <li><strong>Age:</strong> 22</li>
+              <li><strong>DOB:</strong> 07 Feb 2003</li>
+              <li><strong>Phone:</strong> +94 76 553 6428</li>
+              <li><strong>Email:</strong> sanodyaj@gmail.com</li>
+              <li><strong>Address:</strong> Wewalwala, Ku/Bopitiya</li>
+            </ul>
+          </div>
+          <div class="about-stats wow animate__animated animate__fadeInRight">
+            <div class="stat"><span>10+</span> Major Projects</div>
+            <div class="stat"><span>2+</span> Year Industry</div>
+            <div class="stat"><span>∞</span> Curiosity</div>
+            <div class="badges">
+              <span class="badge">Laravel</span>
+              <span class="badge">Flask</span>
+              <span class="badge">ML</span>
+              <span class="badge">React Native</span>
+              <span class="badge">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head wow animate__animated animate__fadeInUp">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Tools I use to craft robust solutions.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div
+            class="skill-card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.05s"
+          >
+            <h3>Languages & Core</h3>
+            <ul class="tags">
+              <li>Java</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div
+            class="skill-card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.10s"
+          >
+            <h3>Frameworks & Tools</h3>
+            <ul class="tags">
+              <li>Laravel</li>
+              <li>Flask</li>
+              <li>React Native</li>
+              <li>Git</li>
+              <li>NetBeans</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div
+            class="skill-card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.15s"
+          >
+            <h3>Concepts</h3>
+            <ul class="tags">
+              <li>OOP</li>
+              <li>SDLC</li>
+              <li>APIs</li>
+              <li>Data Visualization</li>
+            </ul>
+          </div>
+          <div
+            class="skill-card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.20s"
+          >
+            <h3>Soft Skills</h3>
+            <ul class="tags">
+              <li>Teamwork</li>
+              <li>Communication</li>
+              <li>Creativity</li>
+              <li>Multitasking</li>
+              <li>Friendly</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section contact">
-    <div class="container">
-      <div class="section-head wow animate__animated animate__fadeInUp">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Open to internships, freelance, and collaboration.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-card wow animate__animated animate__fadeInLeft">
-          <ul class="contact-list">
-            <li><i class="fas fa-envelope"></i> <a href="mailto:sanodyaj@gmail.com">sanodyaj@gmail.com</a></li>
-            <li><i class="fas fa-phone"></i> <a href="tel:+94765536428">+94 76 553 6428</a></li>
-            <li><i class="fab fa-linkedin"></i> <a target="_blank" rel="noopener" href="http://www.linkedin.com/in/sanodya-v-jinadasa-715913269">LinkedIn</a></li>
-            <li><i class="fab fa-github"></i> <a target="_blank" rel="noopener" href="https://github.com/sanodyaJinadasa">GitHub</a></li>
-          </ul>
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head wow animate__animated animate__fadeInUp">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            A path that blends software engineering with data science.
+          </p>
         </div>
-        <form class="contact-form wow animate__animated animate__fadeInRight" onsubmit="return handleSubmit(event)">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" required/>
+        <div class="timeline">
+          <div class="timeline-item wow animate__animated animate__fadeInUp">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>B.Sc. (Hons) Data Science</h3>
+              <p>
+                Sabaragamuwa University of Sri Lanka —
+                <strong>2024–Present</strong> (2nd Year Undergraduate)
+              </p>
+            </div>
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@example.com" required/>
+          <div
+            class="timeline-item wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.05s"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>B.Sc. (Hons) Software Engineering</h3>
+              <p>
+                IIC University of Technology — Java Institute —
+                <strong>2020–2024</strong>
+              </p>
+            </div>
           </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="How can we work together?" required></textarea>
+          <div
+            class="timeline-item wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Diploma in Information Technology</h3>
+              <p>Esoft Metro Campus — <strong>2021–2022</strong></p>
+            </div>
           </div>
-          <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
-          <p class="form-note">This demo form uses JavaScript only and won’t actually send email.</p>
-        </form>
+          <div
+            class="timeline-item wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.15s"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Certificate Course in CCNAv7</h3>
+              <p>Cisco Networking Academy — <strong>2020–2021</strong></p>
+            </div>
+          </div>
+          <div
+            class="timeline-item wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>G.C.E A/L — Physical Science</h3>
+              <p>
+                A for IT, C for Maths, S for Physics — <strong>2022</strong>
+              </p>
+            </div>
+          </div>
+          <div
+            class="timeline-item wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.25s"
+          >
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>G.C.E O/L</h3>
+              <p>
+                6 A's (Maths, IT, Sinhala, Buddhism, History), 3 B's (Science,
+                Commerce, English) — <strong>2019</strong>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <p>© <span id="year"></span> Sanodya Jinadasa. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="#home">Top</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head wow animate__animated animate__fadeInUp">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Selected works I’m proud of.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card wow animate__animated animate__fadeInUp">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="pill">Web</span>
+                <span class="pill pill-outline">Individual</span>
+              </div>
+              <h3>E‑Commerce Web Application</h3>
+              <p>
+                A web‑based online shopping platform for mobile items. Built as
+                a first‑year project with attention to UX and modular code.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.05s"
+          >
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="pill">Full‑Stack</span>
+                <span class="pill pill-outline">AI/ML</span>
+              </div>
+              <h3>FocusZen — Study Focus Website</h3>
+              <p>
+                Laravel + Python (Flask) + ML. Features sentiment analysis on
+                YouTube comments, sleep prediction, dashboarding, and a focus
+                community.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="pill">Desktop</span>
+                <span class="pill pill-outline">Individual</span>
+              </div>
+              <h3>Student Management System</h3>
+              <p>
+                A desktop application for schools/academies with CRUD modules,
+                reports, and a clean navigation experience.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.15s"
+          >
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="pill">Mobile</span>
+                <span class="pill pill-outline">React Native</span>
+              </div>
+              <h3>Note App</h3>
+              <p>
+                A simple but polished note‑taking app with local storage,
+                theming, and quick search for productivity on the go.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="pill">Android</span>
+                <span class="pill pill-outline">Commerce</span>
+              </div>
+              <h3>PlantMe App</h3>
+              <p>
+                An Android m‑commerce app that streamlines browsing and
+                purchasing for plant lovers.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head wow animate__animated animate__fadeInUp">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">
+            Learning by shipping in real environments.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card wow animate__animated animate__fadeInUp">
+            <div class="card-inner">
+              <h3>
+                Full‑Stack Web Developer — Jayawardena Enterprises (Pvt) Ltd
+              </h3>
+              <p><strong>Duration:</strong> 1+ year</p>
+              <p><strong>Stack:</strong> Laravel, PHP, JS, CSS</p>
+              <p>
+                Contributed to features, fixed bugs, and collaborated with
+                cross‑functional teams to deliver value.
+              </p>
+            </div>
+          </article>
+          <article
+            class="card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.05s"
+          >
+            <div class="card-inner">
+              <h3>Intern Full‑Stack Web Developer — Froze‑it (Pvt) Ltd</h3>
+              <p><strong>Duration:</strong> 1 year</p>
+              <p>
+                Built and maintained full‑stack features across frontend and
+                backend, improving performance and usability.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="extras" class="section alt">
+      <div class="container">
+        <div class="section-head wow animate__animated animate__fadeInUp">
+          <h2 class="section-title">Leadership & Extras</h2>
+          <p class="section-subtitle">
+            Beyond code — growing through teamwork and service.
+          </p>
+        </div>
+        <div class="cards three">
+          <article class="card wow animate__animated animate__fadeInUp">
+            <div class="card-inner">
+              <h3>School Prefect</h3>
+              <p>(2017–2019)</p>
+            </div>
+          </article>
+          <article
+            class="card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.05s"
+          >
+            <div class="card-inner">
+              <h3>Netball Team</h3>
+              <p>Team player with discipline and grit.</p>
+            </div>
+          </article>
+          <article
+            class="card wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="card-inner">
+              <h3>Scout Team — Vice‑Captain</h3>
+              <p>Leadership through action and responsibility.</p>
+            </div>
+          </article>
+        </div>
+
+        <div
+          class="split two wow animate__animated animate__fadeInUp"
+          style="margin-top: 1rem"
+        >
+          <div class="card">
+            <div class="card-inner">
+              <h3>Languages</h3>
+              <p>English, Sinhala</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>References</h3>
+              <ul class="ref-list">
+                <li>
+                  <strong>R.A.M.K. Rajapaksha</strong> — Software Engineer /
+                  Teacher / SEO Specialist — 071 231 3177 —
+                  rajapakshakosala@gmail.com
+                </li>
+                <li>
+                  <strong>Thilina Rajakaruna</strong> — Lecturer, Java Institute
+                  — 071 051 2311 — thilina.jiat@gamil.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-head wow animate__animated animate__fadeInUp">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Open to internships, freelance, and collaboration.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card wow animate__animated animate__fadeInLeft">
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:sanodyaj@gmail.com">sanodyaj@gmail.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+94765536428">+94 76 553 6428</a>
+              </li>
+              <li>
+                <i class="fab fa-linkedin"></i>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="http://www.linkedin.com/in/sanodya-v-jinadasa-715913269"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-github"></i>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://github.com/sanodyaJinadasa"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form
+            class="contact-form wow animate__animated animate__fadeInRight"
+            onsubmit="return handleSubmit(event)"
+          >
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="How can we work together?"
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              <i class="fas fa-paper-plane"></i> Send
+            </button>
+            <p class="form-note">
+              This demo form uses JavaScript only and won’t actually send email.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Sanodya Jinadasa. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
