@@ -563,10 +563,6 @@ textarea {
     grid-template-columns: 1fr
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr)
-  }
-
   .cards {
     grid-template-columns: repeat(2, 1fr)
   }
@@ -587,10 +583,6 @@ textarea {
 
   .nav-toggle {
     display: block
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr
   }
 
   .cards,

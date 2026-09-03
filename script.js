@@ -48,3 +48,22 @@ function handleSubmit(e) {
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Skills Tabs Logic
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all buttons and panes
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+
+    // Add active class to clicked button
+    btn.classList.add('active');
+
+    // Show target pane
+    const targetId = btn.getAttribute('data-target');
+    const targetPane = document.getElementById(targetId);
+    if (targetPane) {
+      targetPane.classList.add('active');
+    }
+  });
+});
