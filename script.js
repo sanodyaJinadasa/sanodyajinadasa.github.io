@@ -67,3 +67,13 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     }
   });
 });
+
+
+
+
+
+// Ensure WOW.js is initialized for the animate__animated elements
+// (Requires WOW.js and Animate.css to be included in your HTML)
+document.addEventListener('DOMContentLoaded', () => {
+  new WOW().init();
+});
