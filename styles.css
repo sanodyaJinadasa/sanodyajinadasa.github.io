@@ -710,3 +710,18 @@ textarea {
   display: block;
   margin-bottom: 0.2rem;
 }
+
+/* Responsive adjustments */
+@media (max-width: 980px) {
+  .cards.three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+
+  .cards.three,
+  .split.two {
+    grid-template-columns: 1fr;
+  }
+}
