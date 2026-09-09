@@ -834,3 +834,33 @@ textarea {
 .see-more-btn:hover {
   background: var(--brand-1);
 }
+
+/* Achievements & Volunteering sections */
+.achievements, .volunteering {
+  padding: 4.5rem 0;
+  max-width: min(1120px, 92%);
+  margin-inline: auto;
+}
+
+.achievements .heading, .volunteering .heading {
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.achievements .heading span, .volunteering .heading span {
+  color: var(--brand-1);
+}
+
+.achievement-container, .volunteering-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .achievement-container, .volunteering-container {
+    grid-template-columns: 1fr;
+  }
+}
