@@ -46,8 +46,8 @@ img {
   display: inline-flex;
   align-items: center;
   gap: .6rem;
-  padding: .9rem 1.2rem;
-  border-radius: 14px;
+  padding: .6rem 1.2rem;
+  border-radius: 4px;
   border: 1px solid var(--border);
   background: var(--card-2);
   color: var(--text);
@@ -58,11 +58,12 @@ img {
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, .35)
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .1)
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+  background: var(--brand-2);
+  color: #fff;
   border: none
 }
 
@@ -71,10 +72,7 @@ img {
 }
 
 .grad {
-  background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent
+  color: var(--brand-1);
 }
 
 .muted {
@@ -82,11 +80,7 @@ img {
 }
 
 .bg-blobs {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: -1
+  display: none;
 }
 
 .blob {
@@ -123,7 +117,7 @@ img {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: rgba(10, 10, 18, .45);
+  background: rgba(250, 249, 246, 0.85);
   border-bottom: 1px solid var(--border)
 }
 
@@ -146,8 +140,9 @@ img {
   place-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--brand-1), var(--brand-2))
+  border-radius: 4px;
+  background: var(--brand-2);
+  color: #fff;
 }
 
 .logo-text {
@@ -229,11 +224,11 @@ img {
 }
 
 .card {
-  background: rgba(255, 255, 255, .06);
+  background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, .35)
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .05)
 }
 
 .card-inner {
@@ -335,7 +330,7 @@ img {
   border: 1px solid var(--border);
   padding: .4rem .7rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, .04)
+  background: var(--card-2)
 }
 
 .skills-tabs {
@@ -364,11 +359,11 @@ img {
 }
 
 .tab-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--border);
 }
 
 .tab-btn.active {
-  background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+  background: var(--brand-1);
   border-color: transparent;
   color: #fff;
 }
@@ -432,7 +427,7 @@ img {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(var(--brand-1), var(--brand-2))
+  background: var(--brand-1)
 }
 
 .timeline-item {
@@ -448,8 +443,8 @@ img {
   width: .8rem;
   height: .8rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
-  box-shadow: 0 0 0 6px rgba(106, 90, 249, .15)
+  background: var(--brand-1);
+  box-shadow: 0 0 0 6px var(--card-2)
 }
 
 .timeline-content {
@@ -479,7 +474,7 @@ img {
   border-radius: 999px;
   font-size: .75rem;
   padding: .25rem .55rem;
-  background: rgba(255, 255, 255, .08);
+  background: var(--card-2);
   border: 1px solid var(--border)
 }
 
@@ -532,7 +527,7 @@ textarea {
   padding: .9rem 1rem;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, .03);
+  background: var(--card);
   color: var(--text)
 }
 
@@ -544,7 +539,7 @@ textarea {
 
 .site-footer {
   border-top: 1px solid var(--border);
-  background: rgba(255, 255, 255, .03);
+  background: var(--card-2);
   padding: 1.2rem 0;
   color: var(--muted)
 }
@@ -662,11 +657,11 @@ textarea {
 
 
 .card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
