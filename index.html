@@ -9,7 +9,8 @@
     content="Creative portfolio of P.M. Sanodya Vimukthi Jinadasa — Full‑Stack Developer & Data Science Undergraduate." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="styles.css" />
@@ -28,7 +29,7 @@
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="#home">
-        <span class="logo-mark">SJ</span>
+        <span class="logo-mark">SJ<span class="logo-dot">.</span></span>
         <span class="logo-text">Sanodya Jinadasa</span>
       </a>
       <nav>
@@ -39,7 +40,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#extras">Extras</a></li>
-          <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+          <li><a href="#contact" class="btn btn-primary nav-cta">Contact</a></li>
         </ul>
         <button class="nav-toggle" aria-label="Open Menu">
           <i class="fas fa-bars"></i>
@@ -51,7 +52,11 @@
   <section id="home" class="hero">
     <div class="container hero-grid">
       <div class="hero-text wow animate__animated animate__fadeInUp">
-        <h1>Hi, I'm <span class="grad">P.M. Sanodya V. Jinadasa</span></h1>
+        <p class="hero-eyebrow"><i class="fas fa-hand-sparkles"></i> Hi, I'm</p>
+        <h1 class="hero-name">
+          <span class="hero-name-line hero-name-solid">P.M. Sanodya V.</span>
+          <span class="hero-name-line hero-name-outline">Jinadasa</span>
+        </h1>
         <p class="subtitle">
           Full‑Stack Web Developer <span class="muted">|</span> Data Science
           Undergraduate
@@ -73,8 +78,8 @@
         <div class="cta">
           <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Work</a>
           <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Hire Me</a>
-          <a href="sanodya _jinadasa_CV.pdf" download="sanodya _jinadasa_CV.pdf" class="btn btn-primary">
-            <i class="fas fa-rocket"></i> Download CV
+          <a href="sanodya _jinadasa_CV.pdf" download="sanodya _jinadasa_CV.pdf" class="btn btn-ghost">
+            <i class="fas fa-download"></i> Download CV
           </a>
         </div>
         <div class="social">
@@ -92,6 +97,7 @@
             <img src="profile.jpg" alt="Profile Image" />
           </div>
         </div>
+        <span class="hero-card-tag">B.Sc. Data Science<br>Sabaragamuwa Univ.</span>
       </div>
     </div>
     <a class="scroll-indicator" href="#about" aria-label="Scroll down"><i class="fas fa-angle-down"></i></a>
@@ -385,16 +391,25 @@
 
 
   <section class="achievements" id="achievements">
+    <div class="section-eyebrow wow animate__animated animate__fadeInUp"><span>// hackathons.sort(by="impact")</span></div>
     <h2 class="heading">My <span>Achievements</span></h2>
+    <p class="section-subtitle" style="text-align:center;">A running log of hackathons and competitions — where curiosity met
+      deadlines.</p>
     <div class="achievement-container">
-      <div class="achievement-box">
-        <h3><i class='bx bxs-trophy'></i>Codemania V6.0 Datathon Finalist <br>– Team Deadlock</h3>
+      <div class="achievement-box wow animate__animated animate__fadeInUp">
+        <div class="box-meta">
+          <span class="tag-chip tag-team"><i class='bx bx-group'></i> Team Deadlock</span>
+          <span class="tag-chip tag-result"><i class='bx bx-medal'></i> Top 15 Finalist</span>
+        </div>
+        <h3><i class='bx bxs-trophy'></i>Codemania V6.0 Datathon</h3>
         <div class="achievement-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Achievements/Codemania/codemania (5).jpg" alt="Achievement 1">
-            <img src="images/Achievements/Codemania/codemania (2).jpg" alt="Achievement 2">
-            <img src="images/Achievements/Codemania/codemania (8).jpg" alt="Achievement 3">
-            <img src="images/Achievements/Codemania/codemania (10).jpg" alt="Achievement 4">
+            <img src="images/Achievements/Codemania/codemania.jpg" alt="Codemania V6.0 Datathon 1" loading="lazy">
+            <img src="images/Achievements/Codemania/codemania1.jpg" alt="Codemania V6.0 Datathon 2" loading="lazy">
+            <img src="images/Achievements/Codemania/codemania (2).jpg" alt="Codemania V6.0 Datathon 3" loading="lazy">
+            <img src="images/Achievements/Codemania/codemania (5).jpg" alt="Codemania V6.0 Datathon 4" loading="lazy">
+            <img src="images/Achievements/Codemania/codemania (8).jpg" alt="Codemania V6.0 Datathon 5" loading="lazy">
+            <img src="images/Achievements/Codemania/codemania (10).jpg" alt="Codemania V6.0 Datathon 6" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -404,11 +419,15 @@
           This recognition highlights exceptional teamwork, innovative thinking, and the ability to apply data-driven
           approaches to solve complex problems in a fast-paced environment.</p>
       </div>
-      <div class="achievement-box">
-        <h3><i class='bx bxs-trophy'></i>Bio Fusion Hackathon Participant <br>- Team Deadlock</h3>
+      <div class="achievement-box wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
+        <div class="box-meta">
+          <span class="tag-chip tag-team"><i class='bx bx-group'></i> Team Deadlock</span>
+          <span class="tag-chip tag-result"><i class='bx bx-medal'></i> Participant</span>
+        </div>
+        <h3><i class='bx bxs-trophy'></i>Bio Fusion Hackathon</h3>
         <div class="achievement-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Achievements/BioFusion/BioFusion.jpg" alt="Achievement 1">
+            <img src="images/Achievements/BioFusion/BioFusion.jpg" alt="Bio Fusion Hackathon" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -418,14 +437,18 @@
           University of Sri Jayewardenepura's IEEE EMBS chapter. Successfully collaborated and competed throughout the
           week-long event.</p>
       </div>
-      <div class="achievement-box">
-        <h3><i class='bx bxs-trophy'></i>CryptX 2.0 Finalist <br>- Team Predictra</h3>
+      <div class="achievement-box wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+        <div class="box-meta">
+          <span class="tag-chip tag-team"><i class='bx bx-group'></i> Team Predictra</span>
+          <span class="tag-chip tag-result"><i class='bx bx-medal'></i> Top 15 Finalist</span>
+        </div>
+        <h3><i class='bx bxs-trophy'></i>CryptX 2.0 Hackathon</h3>
         <div class="achievement-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Achievements/CryptX 2.0/CryptX 2 (3).jpg" alt="Achievement 1">
-            <img src="images/Achievements/CryptX 2.0/CryptX 2 (4).jpg" alt="Achievement 2">
-            <img src="images/Achievements/CryptX 2.0/CryptX 2 (1).jpg" alt="Achievement 3">
-            <img src="images/Achievements/CryptX 2.0/CryptX 2 (2).jpg" alt="Achievement 4">
+            <img src="images/Achievements/CryptX 2.0/CryptX 2 (1).jpg" alt="CryptX 2.0 Hackathon 1" loading="lazy">
+            <img src="images/Achievements/CryptX 2.0/CryptX 2 (2).jpg" alt="CryptX 2.0 Hackathon 2" loading="lazy">
+            <img src="images/Achievements/CryptX 2.0/CryptX 2 (3).jpg" alt="CryptX 2.0 Hackathon 3" loading="lazy">
+            <img src="images/Achievements/CryptX 2.0/CryptX 2 (4).jpg" alt="CryptX 2.0 Hackathon 4" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -436,17 +459,21 @@
           Jayewardenepura. Collaborated effectively with peers and secured a position as one of the Top 15 finalists
           in the week-long event.</p>
       </div>
-      <div class="achievement-box">
-        <h3><i class='bx bxs-trophy'></i>BitCode 6.0 Finalist <br>- Team Deadlock</h3>
+      <div class="achievement-box wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+        <div class="box-meta">
+          <span class="tag-chip tag-team"><i class='bx bx-group'></i> Team Deadlock</span>
+          <span class="tag-chip tag-result"><i class='bx bx-medal'></i> Top 10 Finalist</span>
+        </div>
+        <h3><i class='bx bxs-trophy'></i>BitCode 6.0 Hackathon</h3>
         <div class="achievement-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Achievements/Bitcode V6.0/bitcode (1).jpg" alt="Achievement 1">
-            <img src="images/Achievements/Bitcode V6.0/bitcode (2).jpg" alt="Achievement 2">
-            <img src="images/Achievements/Bitcode V6.0/bitcode (3).jpg" alt="Achievement 3">
-            <img src="images/Achievements/Bitcode V6.0/bitcode (4).jpg" alt="Achievement 4">
-            <img src="images/Achievements/Bitcode V6.0/bitcode (5).jpg" alt="Achievement 5">
-            <img src="images/Achievements/Bitcode V6.0/bitcode (6).jpg" alt="Achievement 6">
-            <img src="images/Achievements/Bitcode V6.0/bitcode (7).jpg" alt="Achievement 7">
+            <img src="images/Achievements/Bitcode V6.0/bitcode (1).jpg" alt="BitCode 6.0 Hackathon 1" loading="lazy">
+            <img src="images/Achievements/Bitcode V6.0/bitcode (2).jpg" alt="BitCode 6.0 Hackathon 2" loading="lazy">
+            <img src="images/Achievements/Bitcode V6.0/bitcode (3).jpg" alt="BitCode 6.0 Hackathon 3" loading="lazy">
+            <img src="images/Achievements/Bitcode V6.0/bitcode (4).jpg" alt="BitCode 6.0 Hackathon 4" loading="lazy">
+            <img src="images/Achievements/Bitcode V6.0/bitcode (5).jpg" alt="BitCode 6.0 Hackathon 5" loading="lazy">
+            <img src="images/Achievements/Bitcode V6.0/bitcode (6).jpg" alt="BitCode 6.0 Hackathon 6" loading="lazy">
+            <img src="images/Achievements/Bitcode V6.0/bitcode (7).jpg" alt="BitCode 6.0 Hackathon 7" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -456,17 +483,21 @@
           the Business Information Technology Students' Association of Rajarata University. Collaborated effectively
           with peers and secured a position as one of the Top 10 finalists in the week-long event.</p>
       </div>
-      <div class="achievement-box">
-        <h3><i class='bx bxs-trophy'></i>InspiHER &#123;Tech&#125; V4.0 — Top 10 Finalist <br>- Team Hacktronix</h3>
+      <div class="achievement-box wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+        <div class="box-meta">
+          <span class="tag-chip tag-team"><i class='bx bx-group'></i> Team Hacktronix</span>
+          <span class="tag-chip tag-result"><i class='bx bx-medal'></i> Top 10 Finalist</span>
+        </div>
+        <h3><i class='bx bxs-trophy'></i>InspiHER &#123;Tech&#125; V4.0</h3>
         <div class="achievement-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Achievements/Inspireher/ins1.jpg" alt="InspiHER 1">
-            <img src="images/Achievements/Inspireher/ins2.jpg" alt="InspiHER 2">
-            <img src="images/Achievements/Inspireher/ins3.jpg" alt="InspiHER 3">
-            <img src="images/Achievements/Inspireher/ins4.jpg" alt="InspiHER 4">
-            <img src="images/Achievements/Inspireher/ins5.jpg" alt="InspiHER 5">
-            <img src="images/Achievements/Inspireher/ins6.jpg" alt="InspiHER 6">
-            <img src="images/Achievements/Inspireher/ins7.jpg" alt="InspiHER 7">
+            <img src="images/Achievements/Inspireher/ins1.jpg" alt="InspiHER Tech V4.0 1" loading="lazy">
+            <img src="images/Achievements/Inspireher/ins2.jpg" alt="InspiHER Tech V4.0 2" loading="lazy">
+            <img src="images/Achievements/Inspireher/ins3.jpg" alt="InspiHER Tech V4.0 3" loading="lazy">
+            <img src="images/Achievements/Inspireher/ins4.jpg" alt="InspiHER Tech V4.0 4" loading="lazy">
+            <img src="images/Achievements/Inspireher/ins5.jpg" alt="InspiHER Tech V4.0 5" loading="lazy">
+            <img src="images/Achievements/Inspireher/ins6.jpg" alt="InspiHER Tech V4.0 6" loading="lazy">
+            <img src="images/Achievements/Inspireher/ins7.jpg" alt="InspiHER Tech V4.0 7" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -487,20 +518,26 @@
 
 
   <section class="volunteering" id="volunteering">
+    <div class="section-eyebrow wow animate__animated animate__fadeInUp"><span>// give_back(community, tech_skills)</span></div>
     <h2 class="heading">My <span>Volunteering</span></h2>
+    <p class="section-subtitle" style="text-align:center;">Giving back to the community that shaped my journey into
+      tech.</p>
     <div class="volunteering-container">
-      <div class="volunteering-box">
-        <h3><i class='bx bxs-heart'></i>STEMUP - CodeClub - April 25th, 2026</h3>
+      <div class="volunteering-box wow animate__animated animate__fadeInUp">
+        <div class="box-meta">
+          <span class="tag-chip tag-date"><i class='bx bx-calendar'></i> April 25th, 2026</span>
+        </div>
+        <h3><i class='bx bxs-heart'></i>STEMUP – CodeClub</h3>
         <div class="volunteering-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (1).jpeg" alt="STEMUP2 session 1">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (2).jpg" alt="STEMUP2 session 2">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (3).jpg" alt="STEMUP2 session 3">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (4).jpg" alt="STEMUP2 session 4">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (5).jpg" alt="STEMUP2 session 5">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (6).jpg" alt="STEMUP2 session 6">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (7).jpg" alt="STEMUP2 session 7">
-            <img src="images/Volunteering/STEMUP2/STEMUP2 (1).jpg" alt="STEMUP2 session 8">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (1).jpeg" alt="STEMUP2 CodeClub session 1" loading="lazy">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (1).jpg" alt="STEMUP2 CodeClub session 2" loading="lazy">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (2).jpg" alt="STEMUP2 CodeClub session 3" loading="lazy">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (3).jpg" alt="STEMUP2 CodeClub session 4" loading="lazy">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (4).jpg" alt="STEMUP2 CodeClub session 5" loading="lazy">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (5).jpg" alt="STEMUP2 CodeClub session 6" loading="lazy">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (6).jpg" alt="STEMUP2 CodeClub session 7" loading="lazy">
+            <img src="images/Volunteering/STEMUP2/STEMUP2 (7).jpg" alt="STEMUP2 CodeClub session 8" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -514,15 +551,18 @@
           best ways to give back to the tech community, and I truly enjoyed every moment of it. Thank you, STEMUp,
           for the opportunity to contribute to such a meaningful initiative!</p>
       </div>
-      <div class="volunteering-box">
-        <h3><i class='bx bxs-heart'></i>STEMUP - CodeClub - Sep 9th, 2025</h3>
+      <div class="volunteering-box wow animate__animated animate__fadeInUp" data-wow-delay="0.05s">
+        <div class="box-meta">
+          <span class="tag-chip tag-date"><i class='bx bx-calendar'></i> Sep 9th, 2025</span>
+        </div>
+        <h3><i class='bx bxs-heart'></i>STEMUP – CodeClub</h3>
         <div class="volunteering-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Volunteering/STEMUP1/STEMUP1 (4).jpeg" alt="STEMUP1 session 1">
-            <img src="images/Volunteering/STEMUP1/STEMUP1 (2).jpeg" alt="STEMUP1 session 2">
-            <img src="images/Volunteering/STEMUP1/STEMUP1 (1).jpeg" alt="STEMUP1 session 3">
-            <img src="images/Volunteering/STEMUP1/STEMUP1 (3).jpeg" alt="STEMUP1 session 4">
-            <img src="images/Volunteering/STEMUP1/STEMUP1 (5).jpeg" alt="STEMUP1 session 5">
+            <img src="images/Volunteering/STEMUP1/STEMUP1 (1).jpeg" alt="STEMUP1 CodeClub session 1" loading="lazy">
+            <img src="images/Volunteering/STEMUP1/STEMUP1 (2).jpeg" alt="STEMUP1 CodeClub session 2" loading="lazy">
+            <img src="images/Volunteering/STEMUP1/STEMUP1 (3).jpeg" alt="STEMUP1 CodeClub session 3" loading="lazy">
+            <img src="images/Volunteering/STEMUP1/STEMUP1 (4).jpeg" alt="STEMUP1 CodeClub session 4" loading="lazy">
+            <img src="images/Volunteering/STEMUP1/STEMUP1 (5).jpeg" alt="STEMUP1 CodeClub session 5" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -533,17 +573,20 @@
           to learn. I believe initiatives like these help empower the next generation to build innovative solutions
           and shape the future of technology.</p>
       </div>
-      <div class="volunteering-box">
-        <h3><i class='bx bxs-heart'></i>ITECH 2.0 - May 28th, 2025</h3>
+      <div class="volunteering-box wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+        <div class="box-meta">
+          <span class="tag-chip tag-date"><i class='bx bx-calendar'></i> May 28th, 2025</span>
+        </div>
+        <h3><i class='bx bxs-heart'></i>ITECH 2.0 Exhibition</h3>
         <div class="volunteering-slider" data-slider>
           <div class="slider-track">
-            <img src="images/Volunteering/ITECH2.0/ITECH (1).jpg" alt="ITECH session 1">
-            <img src="images/Volunteering/ITECH2.0/ITECH (2).jpg" alt="ITECH session 2">
-            <img src="images/Volunteering/ITECH2.0/ITECH (3).jpg" alt="ITECH session 3">
-            <img src="images/Volunteering/ITECH2.0/ITECH (4).jpg" alt="ITECH session 4">
-            <img src="images/Volunteering/ITECH2.0/ITECH (5).jpg" alt="ITECH session 5">
-            <img src="images/Volunteering/ITECH2.0/ITECH (6).jpg" alt="ITECH session 6">
-            <img src="images/Volunteering/ITECH2.0/ITECH (7).jpg" alt="ITECH session 7">
+            <img src="images/Volunteering/ITECH2.0/ITECH (1).jpg" alt="ITECH 2.0 Exhibition session 1" loading="lazy">
+            <img src="images/Volunteering/ITECH2.0/ITECH (2).jpg" alt="ITECH 2.0 Exhibition session 2" loading="lazy">
+            <img src="images/Volunteering/ITECH2.0/ITECH (3).jpg" alt="ITECH 2.0 Exhibition session 3" loading="lazy">
+            <img src="images/Volunteering/ITECH2.0/ITECH (4).jpg" alt="ITECH 2.0 Exhibition session 4" loading="lazy">
+            <img src="images/Volunteering/ITECH2.0/ITECH (5).jpg" alt="ITECH 2.0 Exhibition session 5" loading="lazy">
+            <img src="images/Volunteering/ITECH2.0/ITECH (6).jpg" alt="ITECH 2.0 Exhibition session 6" loading="lazy">
+            <img src="images/Volunteering/ITECH2.0/ITECH (7).jpg" alt="ITECH 2.0 Exhibition session 7" loading="lazy">
           </div>
           <button class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
           <button class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
@@ -600,6 +643,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <section id="contact" class="section contact">

@@ -1,4 +1,3 @@
-
 const toggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
 if (toggle && links) {
@@ -127,6 +126,40 @@ function initSliders() {
       nextBtn.style.display = 'none';
       dotsContainer.style.display = 'none';
     }
+
+    // Keyboard navigation: focus the slider (tab to it) then use arrow keys
+    slider.setAttribute('tabindex', '0');
+    slider.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { goTo(current - 1); resetAuto(); }
+      if (e.key === 'ArrowRight') { goTo(current + 1); resetAuto(); }
+    });
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchDeltaX = 0;
+    track.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+      touchDeltaX = 0;
+      clearInterval(autoTimer);
+    }, { passive: true });
+
+    track.addEventListener('touchmove', (e) => {
+      touchDeltaX = e.touches[0].clientX - touchStartX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', () => {
+      const SWIPE_THRESHOLD = 40;
+      if (touchDeltaX > SWIPE_THRESHOLD) {
+        goTo(current - 1);
+      } else if (touchDeltaX < -SWIPE_THRESHOLD) {
+        goTo(current + 1);
+      }
+      resetAuto();
+    });
+
+    // Pause autoplay while the pointer is over the slider, resume on leave
+    slider.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    slider.addEventListener('mouseleave', resetAuto);
 
     resetAuto();
   });
