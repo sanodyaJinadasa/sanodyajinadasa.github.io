@@ -383,7 +383,71 @@ nav { display: flex; align-items: center; gap: 1.4rem }
 .pill { border-radius: 999px; font-size: .74rem; padding: .3rem .65rem; background: var(--card-2); border: 1px solid var(--border); font-family: var(--mono) }
 .pill-outline { background: transparent }
 
-.split.two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem }
+.split.two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; width: 100% }
+
+.ref-card {
+  height: 100%;
+}
+
+.ref-card .card-inner {
+  padding: 1.8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ref-name {
+  font-size: 1.25rem;
+  font-family: var(--display);
+  color: var(--ink);
+  margin: 0.2rem 0 0.35rem;
+  font-weight: 700;
+}
+
+.ref-role {
+  color: var(--pine);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0 0 1.2rem;
+  line-height: 1.45;
+}
+
+.ref-contacts {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0;
+  border-top: 1px solid var(--border);
+  padding-top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.ref-contacts li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.ref-contacts li i {
+  color: var(--accent);
+  width: 18px;
+  text-align: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.ref-contacts a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.ref-contacts a:hover {
+  color: var(--accent);
+}
 
 .ref-list { list-style: none; padding: 0; margin: 0 }
 .ref-list li { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); color: var(--muted); font-size: .92rem }
