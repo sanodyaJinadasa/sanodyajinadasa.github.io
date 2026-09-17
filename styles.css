@@ -79,14 +79,29 @@ img { max-width: 100%; display: block }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(243, 239, 228, 0.88);
-  backdrop-filter: blur(10px);
+  background: rgba(243, 239, 228, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
-.nav { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0 }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+}
 
-.logo { display: flex; align-items: center; gap: .6rem; font-family: var(--display); font-weight: 700; font-size: 1.05rem }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ink);
+  text-decoration: none;
+}
 
 .logo-mark {
   display: inline-grid;
@@ -95,8 +110,9 @@ img { max-width: 100%; display: block }
   height: 38px;
   border-radius: 50%;
   background: var(--ink);
-  color: var(--bg);
+  color: #FFFFFF;
   font-size: .85rem;
+  font-weight: 700;
   letter-spacing: .02em;
 }
 
@@ -104,23 +120,82 @@ img { max-width: 100%; display: block }
 
 .logo-text { letter-spacing: .01em }
 
-nav { display: flex; align-items: center; gap: 1.4rem }
+nav {
+  display: flex;
+  align-items: center;
+}
 
-.nav-links { display: flex; gap: .3rem; list-style: none; margin: 0; padding: 0 }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-.nav-links a { padding: .5rem .75rem; border-radius: 999px; font-weight: 500; font-size: .93rem; color: var(--ink) }
-.nav-links a:hover { background: var(--card-2) }
+.nav-links li {
+  display: inline-flex;
+  align-items: center;
+}
 
-.nav-cta { padding: .55rem 1.25rem !important; margin-left: .4rem }
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: .45rem .8rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: .93rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: all .2s ease;
+  line-height: 1.2;
+}
 
-.nav-toggle { display: none; background: none; border: none; color: var(--ink); font-size: 1.3rem }
+.nav-links a:hover {
+  background: var(--card-2);
+  color: var(--accent);
+}
+
+/* Contact Button in Header: crisp white text on dark pill */
+.nav-links a.nav-cta,
+.nav-cta {
+  background: var(--ink) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--ink) !important;
+  padding: .55rem 1.4rem !important;
+  margin-left: .5rem;
+  font-weight: 600 !important;
+  font-size: .92rem !important;
+  line-height: 1.2;
+  box-shadow: 0 4px 12px rgba(22, 25, 28, 0.15);
+  cursor: pointer;
+}
+
+.nav-links a.nav-cta:hover,
+.nav-cta:hover {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(225, 82, 30, 0.25);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--ink);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 
 /* ==========================================================================
    Hero
    ========================================================================== */
-.hero { padding: 3.5rem 0 6rem; position: relative }
+.hero { padding: 2.2rem 0 1.2rem; position: relative }
 
-.hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 2.5rem; align-items: center }
+.hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 2rem; align-items: center }
 
 .hero-eyebrow {
   display: inline-flex;
@@ -149,17 +224,28 @@ nav { display: flex; align-items: center; gap: 1.4rem }
 
 .tagline { max-width: 56ch; margin: .9rem 0 1.4rem; color: var(--ink) }
 
-.social { display: flex; gap: .7rem; margin-top: 1.2rem }
+.social { display: flex; gap: .75rem; margin-top: 1.2rem }
 
 .social a {
-  width: 40px; height: 40px;
+  width: 42px; height: 42px;
   display: grid; place-items: center;
   border-radius: 50%;
   border: 1px solid var(--border);
   background: var(--card);
+  color: var(--ink);
+  font-size: 1.1rem;
+  transition: all .2s ease;
+  text-decoration: none;
 }
 
-.social a:hover { transform: translateY(-2px); border-color: var(--ink) }
+.social a:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 4px 12px rgba(225, 82, 30, 0.18);
+}
+
+.social a i { line-height: 1 }
 
 .facts { list-style: none; padding: 0; margin: 0 }
 
@@ -203,24 +289,31 @@ nav { display: flex; align-items: center; gap: 1.4rem }
 
 .scroll-indicator {
   display: grid; place-items: center;
-  width: 46px; height: 46px;
+  width: 42px; height: 42px;
   border: 1px solid var(--border);
   border-radius: 50%;
-  margin: 3rem auto 0;
+  margin: 1.2rem auto 0;
   color: var(--ink);
+  transition: all .2s ease;
+}
+
+.scroll-indicator:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(2px);
 }
 
 /* ==========================================================================
    Sections (generic)
    ========================================================================== */
-.section { padding: 5rem 0 }
+.section { padding: 2.8rem 0 }
 .section.alt { background: var(--bg-2) }
 
-.section-head { margin-bottom: 2.5rem; max-width: 62ch }
+.section-head { margin-bottom: 1.6rem; max-width: 62ch }
 
 .section-title { font-family: var(--display); font-weight: 700; font-size: clamp(1.7rem, 3vw, 2.4rem); margin: 0 }
 
-.section-subtitle { color: var(--muted); margin: .6rem 0 0; max-width: 60ch }
+.section-subtitle { color: var(--muted); margin: .5rem 0 0; max-width: 60ch }
 
 /* Centered variant used by achievements / volunteering, which read as
    standalone feature sections rather than the page's primary flow */
@@ -230,7 +323,7 @@ nav { display: flex; align-items: center; gap: 1.4rem }
 /* ==========================================================================
    About
    ========================================================================== */
-.about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2.5rem; align-items: start }
+.about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: start }
 
 .about-card {
   background: var(--card);
@@ -458,7 +551,7 @@ nav { display: flex; align-items: center; gap: 1.4rem }
    Achievements & Volunteering
    ========================================================================== */
 .achievements, .volunteering {
-  padding: 5rem 0;
+  padding: 2.8rem 0;
   max-width: min(1160px, 92%);
   margin-inline: auto;
   position: relative;
@@ -490,7 +583,7 @@ nav { display: flex; align-items: center; gap: 1.4rem }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 1.5rem;
-  margin-top: 2.4rem;
+  margin-top: 1.6rem;
   counter-reset: card-index;
 }
 
