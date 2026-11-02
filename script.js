@@ -104,8 +104,8 @@ function initTypewriter() {
 
   const words = [
     "Data Scientist",
+    "ML & NLP Enthusiast",
     "Full-Stack Developer",
-    "Machine Learning Engineer",
     "Problem Solver"
   ];
 
